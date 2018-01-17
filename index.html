@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ToDoItem</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="src/scripts/lib/require.js" data-main="src/scripts/app.js" defer></script>
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Task title</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter task title">
+        </div>
+        <div class="row">
+        <div class="form-group col-4">
+          <label for="date">Deadline</label>
+          <input type="date" id="date" value="2018-01-17" />
+        </div>
+        <div class="form-group col-8">
+          <label for="exampleFormControlSelect1">Priority</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>!!! Important and Urgent</option>
+            <option>!! Important and Not urgent</option>
+            <option>! Not important and Urgent</option>
+            <option>Not important and Not urgent</option>
+          </select>
+        </div>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Task description</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter task description"></textarea>
+        </div>
+      </form>
+      <button type="button" class="btn btn-secondary">Add task</button>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
