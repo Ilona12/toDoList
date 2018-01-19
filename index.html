@@ -13,36 +13,119 @@
 
 <body>
 <div class="container">
-  <div class="row">
-    <div class="col-8">
-      <form>
+  <div class="row row-top">
+    <div class="col">
+      <h3>Sorting</h3>
+    <form class="form-row collect">
+      <div class="form-group col-md-4">
+        <label for="exampleFormControlSelect2">Status</label>
+        <select class="form-control" id="exampleFormControlSelect2">
+          <option>All</option>
+          <option>Overdue</option>
+          <option>New</option>
+          <option>In the pipeline</option>
+          <option>Completed</option>
+          <option>In the archive</option>
+        </select>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="exampleFormControlSelect3">Sort by priority</label>
+        <select class="form-control" id="exampleFormControlSelect3">
+          <option>All</option>
+          <option>!!! Important and Urgent</option>
+          <option>!! Important and Not urgent</option>
+          <option>! Not important and Urgent</option>
+          <option>Not important and Not urgent</option>
+        </select>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="date">Sort by date</label>
+        <input type="date" id="date" value="2018-01-01" />
+      </div>
+    </form>
+    </div>
+  </div>
+  <div class="row row-top">
+    <div class="col">
+      <h3>New task</h3>
+      <form class="collect">
         <div class="form-group">
           <label for="exampleFormControlInput1">Task title</label>
           <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter task title">
         </div>
-        <div class="row">
-        <div class="form-group col-4">
-          <label for="date">Deadline</label>
-          <input type="date" id="date" value="2018-01-17" />
-        </div>
-        <div class="form-group col-8">
-          <label for="exampleFormControlSelect1">Priority</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>!!! Important and Urgent</option>
-            <option>!! Important and Not urgent</option>
-            <option>! Not important and Urgent</option>
-            <option>Not important and Not urgent</option>
-          </select>
-        </div>
-        </div>
-
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Task description</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter task description"></textarea>
         </div>
+        <div class="row row-top">
+          <div class="form-group col-4">
+            <label for="dateDeadline">Deadline</label>
+            <input type="date" id="dateDeadline" value="2018-01-17" />
+          </div>
+
+        <fieldset class="form-group">
+            <legend class="col-form-label col-sm-2 pt-0">Priority</legend>
+            <div class="col-sm-12">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  !!! Important and Urgent
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  !! Important and Not urgent
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+                <label class="form-check-label" for="gridRadios3">
+                  ! Not important and Urgent
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option3" >
+                <label class="form-check-label" for="gridRadios4">
+                  Not important and Not urgent
+                </label>
+              </div>
+            </div>
+        </fieldset>
+          <button type="button" class="btn btn-secondary btn-lg btn-block addTask">Add task</button>
+
+        </div>
       </form>
-      <button type="button" class="btn btn-secondary">Add task</button>
     </div>
+  </div>
+  <div class="row row-top">
+    <div class="col">
+      <h4>Task list</h4>
+    <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">
+        <input type="checkbox" class="select-all"/>
+      </th>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>
+        <input type="checkbox"/>
+      </td>
+      <th>1</th>
+      <td>Lesson24</td>
+      <td>Homework</td>
+      <td>New</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
   </div>
 </div>
 

@@ -1,13 +1,34 @@
+
+#dateDeadline,
 #date {
   border: 1px solid #ced4da;
   border-radius: 5px;
   color: #495057;
   font-size: 1rem;
-  padding: .375rem .75rem;
+  padding: .3rem .75rem;
   line-height: 1.5;
   display: block;
 }
+.row-top {
+  margin-top: 1rem;
+}
+.collect {
+  border: 1px solid #ced4da;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fbfbfb;
+}
+form[class='collect'] {
+  background-color: #444;
+  color: #ffffff;
+}
+.addTask {
+  margin: 10px;
+  /*background-color: #2F4F4F;*/
+  background-color: #faf33e;
+  color: black;
+}
 
-label {
-  font-size: 1.5rem;
+.form-check-label {
+  font-size: inherit;
 }
